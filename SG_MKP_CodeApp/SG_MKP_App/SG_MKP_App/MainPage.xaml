@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SG_MKP_App.MainPage">
+
+    <StackLayout
+        VerticalOptions="FillAndExpand"
+        BackgroundColor="Black">
+        <!-- Botão Cadastrar - Topo -->
+        <StackLayout
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            Margin="40,0,140,0"
+            Padding="0,0,0,20"
+            Orientation="Horizontal">
+
+            <Button
+                x:Name="ButtonCadUsuario"
+                ImageSource="CadastrarUsuario.png"
+                Text="Cadastrar-se"
+                FontFamily="Sans"
+                FontAttributes="Bold"
+                TextColor="#8257e6"
+                BackgroundColor="Transparent"
+                BorderColor="Black"
+                BorderWidth="0"
+                CornerRadius="5"
+                HeightRequest="40"
+
+                Clicked="ButtonCadUsuario_Clicked"
+            />
+            <!--
+            <BoxView
+                WidthRequest="230"
+                BackgroundColor="Transparent"
+            />
+            <StackLayout>
+                <Switch
+                    x:Name="SwitchTema"
+                    IsToggled="True"
+                    Toggled="SwitchTema_Toggled"
+                />
+            </StackLayout>
+            -->
+        </StackLayout>
+        <!-- Titulo Sistema - Topo -->        
+        <StackLayout
+            BackgroundColor="#8257e6"
+            HorizontalOptions="FillAndExpand"
+            Padding="0,10,0,10">
+
+            <Label 
+                Text="SG-MKP"
+                HorizontalTextAlignment="Center" 
+                TextColor="White"
+                FontSize="36"
+                FontAttributes="Bold"
+            />
+            <Label 
+                Text="Sistema Gerenciador de Marketplace" 
+                HorizontalTextAlignment="Center" 
+                TextColor="White" 
+                FontSize="14"
+                FontAttributes="Bold"
+                FontFamily="Sans"
+                Padding="0,0,0,10"
+            />
+        </StackLayout>
+        <!-- Entrys de "Usuario", "Senha", e Label de "Esqueceu Senha" - Centro -->
+        <StackLayout
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            Margin="50,0,50,0"
+            Padding="0,10,0,10">
+
+            <StackLayout
+                VerticalOptions="FillAndExpand"
+                Padding="0,70,0,0">
+                
+                <Entry 
+                    x:Name="EntryUsuario"
+                    Text="Digite Email, CPF, CNPJ, Telefone" 
+                    HorizontalTextAlignment="Center"
+                    TextColor="#a4a4a4"
+                    
+                    Focused="EntryUsuario_Focused"
+                    Unfocused="EntryUsuario_Unfocused"
+                />
+                
+                <StackLayout
+                    Padding="0,35,0,0">
+                    <Entry
+                        x:Name="EntrySenha"
+                        Text="Senha" 
+                        HorizontalTextAlignment="Center"
+                        TextColor="#a4a4a4"
+                        IsPassword="False"
+                        
+                        Focused="EntrySenha_Focused"
+                        Unfocused="EntrySenha_Unfocused"
+                    />
+
+                    <Label
+                        x:Name="LabelEsqueceuSenha"
+                        Text="Esqueceu sua senha ?"
+                        FontFamily="Sans"
+                        HorizontalTextAlignment="Center"
+                        TextColor="#8257e6"
+                        FontAttributes="Bold"
+                        Padding="0,10,0,0" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout
+            Margin="50,0,50,0"
+            Padding="0,30,0,80">
+            <Button
+                x:Name="ButtonEntrar"
+                Text="Entrar"
+                FontFamily="Sans"
+                FontSize="Large"
+                CornerRadius="5"
+                
+                Clicked="ButtonEntrar_Clicked"
+            />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

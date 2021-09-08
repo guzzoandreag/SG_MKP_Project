@@ -50,3 +50,13 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+SG_MKP_BD_Backups/
+SG_MKP_BD_Dados/
+SG_MKP_CodeApp/SG_MKP_App/SG_MKP_App.Android/bin/
+SG_MKP_CodeApp/SG_MKP_App/SG_MKP_App.Android/obj/Debug/
+SG_MKP_CodeApp/SG_MKP_App/SG_MKP_App.UWP/bin/
+SG_MKP_CodeApp/SG_MKP_App/SG_MKP_App.UWP/obj/ARM/
+SG_MKP_CodeApp/SG_MKP_App/SG_MKP_App.UWP/obj/x86/
+SG_MKP_CodeAPI/SG_MKP_API/packages/
+SG_MKP_CodeAPI/SG_MKP_API/obj/
+SG_MKP_CodeAPI/SG_MKP_API/bin/
