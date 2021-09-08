@@ -393,5 +393,7 @@ FodyWeavers.xsd
 *.sln.iml
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp
+
+# Diretorios de banco de dados.
 SG_MKP_BD_Backups/
 SG_MKP_BD_Dados/
