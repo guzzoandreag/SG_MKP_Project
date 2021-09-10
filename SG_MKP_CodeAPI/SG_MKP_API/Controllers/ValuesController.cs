@@ -21,6 +21,12 @@ namespace SG_MKP_API.Controllers
             return "value";
         }
 
+        // GET api/values/teste
+        public string Get(string usuario)
+        {
+            return "value";
+        }
+
         // POST api/values
         public void Post([FromBody] string value)
         {

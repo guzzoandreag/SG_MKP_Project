@@ -10,19 +10,22 @@ namespace SG_MKP_App
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new frmLogin();
         }
 
         protected override void OnStart()
         {
+            //
         }
 
         protected override void OnSleep()
         {
+            //
         }
 
         protected override void OnResume()
         {
+            //
         }
     }
 }

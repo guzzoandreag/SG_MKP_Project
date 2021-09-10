@@ -10,6 +10,7 @@ namespace SG_MKP_API.Models
         public Model_USUARIO()
             : base("name=Model_USUARIO")
         {
+            //
         }
 
         public virtual DbSet<USUARIO> USUARIO { get; set; }

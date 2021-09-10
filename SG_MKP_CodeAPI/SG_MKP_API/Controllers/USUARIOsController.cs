@@ -12,44 +12,44 @@ using SG_MKP_API.Models;
 
 namespace SG_MKP_API.Controllers
 {
-    public class USUARIOsController : ApiController
+    public class USUARIOSController : ApiController
     {
         private Model_USUARIO db = new Model_USUARIO();
 
-        // GET: api/USUARIOs
+        // GET: api/USUARIOS
         public IQueryable<USUARIO> GetUSUARIO()
         {
             return db.USUARIO;
         }
 
-        // GET: api/USUARIOs/5
+        // GET: api/USUARIOS/5
         [ResponseType(typeof(USUARIO))]
-        public IHttpActionResult GetUSUARIO(int id)
+        public IHttpActionResult GetUSUARIO(int id) 
         {
-            USUARIO uSUARIO = db.USUARIO.Find(id);
-            if (uSUARIO == null)
+            USUARIO Usuario = db.USUARIO.Find(id);
+            if (Usuario == null)
             {
                 return NotFound();
             }
 
-            return Ok(uSUARIO);
+            return Ok(Usuario);
         }
 
-        // PUT: api/USUARIOs/5
+        // PUT: api/USUARIOS/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutUSUARIO(int id, USUARIO uSUARIO)
+        public IHttpActionResult PutUSUARIO(int id, USUARIO Usuario)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != uSUARIO.USU_ID)
+            if (id != Usuario.USU_ID)
             {
                 return BadRequest();
             }
 
-            db.Entry(uSUARIO).State = EntityState.Modified;
+            db.Entry(Usuario).State = EntityState.Modified;
 
             try
             {
@@ -70,35 +70,35 @@ namespace SG_MKP_API.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/USUARIOs
+        // POST: api/USUARIOS
         [ResponseType(typeof(USUARIO))]
-        public IHttpActionResult PostUSUARIO(USUARIO uSUARIO)
+        public IHttpActionResult PostUSUARIO(USUARIO Usuario)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.USUARIO.Add(uSUARIO);
+            db.USUARIO.Add(Usuario);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = uSUARIO.USU_ID }, uSUARIO);
+            return CreatedAtRoute("DefaultApi", new { id = Usuario.USU_ID }, Usuario);
         }
 
-        // DELETE: api/USUARIOs/5
+        // DELETE: api/USUARIOS/5
         [ResponseType(typeof(USUARIO))]
         public IHttpActionResult DeleteUSUARIO(int id)
         {
-            USUARIO uSUARIO = db.USUARIO.Find(id);
-            if (uSUARIO == null)
+            USUARIO Usuario = db.USUARIO.Find(id);
+            if (Usuario == null)
             {
                 return NotFound();
             }
 
-            db.USUARIO.Remove(uSUARIO);
+            db.USUARIO.Remove(Usuario);
             db.SaveChanges();
 
-            return Ok(uSUARIO);
+            return Ok(Usuario);
         }
 
         protected override void Dispose(bool disposing)
