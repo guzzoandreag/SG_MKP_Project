@@ -3,17 +3,19 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="SG_MKP_App.View.frmMainMenu"
-    xmlns:pages="clr-namespace:SG_MKP_App.View">
+    xmlns:pages="clr-namespace:SG_MKP_App.View.frmMainMenu_MasterDetailPage"
+    Title="SG-MKP - MainMenu">
     <MasterDetailPage.Master>
-        <pages:frmCadatrarProduto
-            x:Name="MasterPage"
-            Title="TESTE"
+        <pages:frmMainMenu_Master
+            x:Name="frmMainMenu_Master"
         />
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
         <NavigationPage>
             <x:Arguments>
-                <pages:frmCadatrarProduto />
+                <pages:frmMainMenu_Detail 
+                    x:Name="frmMainMenu_Detail"    
+                />
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>

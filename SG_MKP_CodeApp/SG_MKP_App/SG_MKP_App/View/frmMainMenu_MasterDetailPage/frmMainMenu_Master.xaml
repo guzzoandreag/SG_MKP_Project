@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SG_MKP_App.View.frmMainMenu_MasterDetailPage.frmMainMenu_Master"
+             Title="Menu - SG-MKP"
+             BackgroundColor="#1e1e1e">
+    <ContentPage.Content>
+        <StackLayout
+            BackgroundColor="#1e1e1e">
+            <StackLayout
+                VerticalOptions="Start"
+                HorizontalOptions="StartAndExpand">
+                <Grid
+                    Padding="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition 
+                            Width="*"
+                        />
+                        <ColumnDefinition 
+                            Width="*"
+                        />
+                        <ColumnDefinition 
+                            Width="*"
+                        />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+                            Height="*"
+                        />
+                        <RowDefinition
+                            Height="*"
+                        />
+                        <RowDefinition
+                            Height="*"
+                        />
+                        <RowDefinition
+                            Height="*"
+                        />
+                    </Grid.RowDefinitions>
+                    <Label
+                        Text="Menu - SG-MKP"
+                        FontFamily="Sans"
+                        FontSize="26"
+                        FontAttributes="Bold"
+                        TextColor="#03d260"
+                        VerticalOptions="EndAndExpand"
+                        Padding="10,0,0,0"                         
+                                                
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Grid.ColumnSpan="3"
+                    />
+                    <Button
+                        x:Name="ButtonMeusDados"
+                        Text="Meus Dados"
+                        TextColor="White"
+                        BorderColor="#4a148c"
+                        BorderWidth="2"
+                        FontAttributes="Bold" 
+                        FontFamily="Sans"
+                        FontSize="Large"
+                        BackgroundColor="#4a148c"
+                        CornerRadius="5"                          
+                        
+                        Clicked="ButtonMeusDados_Clicked"
+                        
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        Grid.ColumnSpan="3"                        
+                    />
+                    <Button
+                        x:Name="ButtonConfiguracoes"
+                        Text="Configurações"
+                        TextColor="White"
+                        BorderColor="#4a148c"
+                        BorderWidth="2"
+                        FontAttributes="Bold" 
+                        FontFamily="Sans"
+                        FontSize="Large"
+                        BackgroundColor="#4a148c"
+                        CornerRadius="5"                           
+                        
+                        Clicked="ButtonConfiguracoes_Clicked"
+                        
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        Grid.ColumnSpan="3"                        
+                    />
+                </Grid>                    
+            </StackLayout>
+            <StackLayout
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="FillAndExpand">
+                <Grid                    
+                    Padding="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition 
+                            Width="*"
+                        />
+                        <ColumnDefinition 
+                            Width="*"
+                        />
+                        <ColumnDefinition 
+                            Width="*"
+                        />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+                            Height="*"
+                        />
+                    </Grid.RowDefinitions>
+                    <Button
+                        x:Name="ButtonSair"
+                        Text="Sair"
+                        TextColor="White"
+                        BorderColor="#4a148c"
+                        BorderWidth="2"
+                        FontAttributes="Bold" 
+                        FontFamily="Sans"
+                        FontSize="Large"
+                        BackgroundColor="#4a148c"
+                        CornerRadius="5"
+                        
+                        Clicked="ButtonSair_Clicked"
+                        
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Grid.ColumnSpan="3"
+                    />
+                </Grid>                    
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

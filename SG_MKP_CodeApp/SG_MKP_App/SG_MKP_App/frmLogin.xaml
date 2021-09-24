@@ -2,11 +2,12 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="SG_MKP_App.frmLogin">
+    x:Class="SG_MKP_App.frmLogin"
+    Title="Login">
 
     <StackLayout
         VerticalOptions="FillAndExpand"
-        BackgroundColor="Black">
+        BackgroundColor="#1e1e1e">
         <!-- Botão Cadastrar - Topo -->
         <StackLayout
             HorizontalOptions="FillAndExpand"
@@ -14,53 +15,24 @@
             Margin="40,0,140,0"
             Padding="0,0,0,20"
             Orientation="Horizontal">
-
-            <Button
-                x:Name="ButtonCadUsuario"
-                ImageSource="CadastrarUsuario.png"
-                Text="Cadastrar-se"
-                FontFamily="Sans"
-                FontAttributes="Bold"
-                TextColor="#8257e6"
-                BackgroundColor="Transparent"
-                BorderColor="Black"
-                BorderWidth="0"
-                CornerRadius="5"
-                HeightRequest="40"
-
-                Clicked="ButtonCadUsuario_Clicked"
-            />
-            <!--
-            <BoxView
-                WidthRequest="230"
-                BackgroundColor="Transparent"
-            />
-            <StackLayout>
-                <Switch
-                    x:Name="SwitchTema"
-                    IsToggled="True"
-                    Toggled="SwitchTema_Toggled"
-                />
-            </StackLayout>
-            -->
         </StackLayout>
         <!-- Titulo Sistema - Topo -->        
         <StackLayout
-            BackgroundColor="#8257e6"
+            BackgroundColor="#4a148c"
             HorizontalOptions="FillAndExpand"
             Padding="0,10,0,10">
 
             <Label 
                 Text="SG-MKP"
-                HorizontalTextAlignment="Center" 
+                HorizontalTextAlignment="Center"
                 TextColor="White"
                 FontSize="36"
                 FontAttributes="Bold"
             />
             <Label 
-                Text="Sistema Gerenciador de Marketplace" 
-                HorizontalTextAlignment="Center" 
-                TextColor="White" 
+                Text="Sistema Gerenciador de Marketplace"
+                HorizontalTextAlignment="Center"
+                TextColor="White"
                 FontSize="14"
                 FontAttributes="Bold"
                 FontFamily="Sans"
@@ -106,7 +78,7 @@
                         Text="Esqueceu sua senha ?"
                         FontFamily="Sans"
                         HorizontalTextAlignment="Center"
-                        TextColor="#8257e6"
+                        TextColor="#8257e5"
                         FontAttributes="Bold"
                         Padding="0,10,0,0" />
                 </StackLayout>
@@ -117,13 +89,37 @@
             Padding="0,30,0,80">
             <Button
                 x:Name="ButtonEntrar"
-                Text="Entrar"
+                Text="ENTRAR"
+                TextColor="#4a148c"
+                BorderColor="#4a148c"
+                BorderWidth="2"
+                FontAttributes="Bold" 
                 FontFamily="Sans"
                 FontSize="Large"
+                BackgroundColor="White"
                 CornerRadius="5"
                 
                 Clicked="ButtonEntrar_Clicked"
             />
+
+            <Button
+                x:Name="ButtonCadUsuario"
+                Text="CADASTRAR"
+                TextColor="White"
+                BorderColor="#4a148c"
+                BorderWidth="2"                
+                FontAttributes="Bold" 
+                FontFamily="Sans"
+                FontSize="Large"
+                BackgroundColor="#4a148c"                
+                CornerRadius="5"
+
+                Clicked="ButtonCadUsuario_Clicked"
+            />
+            <!--
+                ImageSource="CadastrarUsuario_2.png"
+                HeightRequest="40"
+            -->
         </StackLayout>
     </StackLayout>
 </ContentPage>

@@ -2,6 +2,8 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using SG_MKP_App.View.frmMainMenu_MasterDetailPage;
+
 namespace SG_MKP_App
 {
     public partial class App : Application

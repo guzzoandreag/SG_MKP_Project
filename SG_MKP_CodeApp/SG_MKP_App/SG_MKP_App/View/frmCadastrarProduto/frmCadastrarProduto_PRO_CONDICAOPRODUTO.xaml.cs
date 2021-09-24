@@ -10,11 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace SG_MKP_App.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class frmCadatrarProduto : ContentPage
+    public partial class frmCadastrarProduto_PRO_CONDICAOPRODUTO : ContentPage
     {
-        public frmCadatrarProduto()
+        public frmCadastrarProduto_PRO_CONDICAOPRODUTO()
         {
             InitializeComponent();
+        }
+
+        private void EntryPRO_CONDICAOPRODUTO_Focused(object sender, FocusEventArgs e)
+        {
+            EntryPRO_CONDICAOPRODUTO.Text = "";
         }
     }
 }

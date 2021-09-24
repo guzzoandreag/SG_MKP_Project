@@ -351,6 +351,18 @@
           }
         }
       },
+      "Xam.Plugin.Media/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "compile": {
@@ -388,6 +400,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -917,6 +930,18 @@
           "runtimes/win10-arm/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
+      "Xam.Plugin.Media/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "compile": {
@@ -954,6 +979,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -1484,6 +1510,18 @@
           "runtimes/win10-arm/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
+      "Xam.Plugin.Media/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "compile": {
@@ -1521,6 +1559,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -2048,6 +2087,18 @@
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         }
       },
+      "Xam.Plugin.Media/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "compile": {
@@ -2085,6 +2136,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -2614,6 +2666,18 @@
           "runtimes/win10-x64/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
+      "Xam.Plugin.Media/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "compile": {
@@ -2651,6 +2715,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -3181,6 +3246,18 @@
           "runtimes/win10-x64/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
+      "Xam.Plugin.Media/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "compile": {
@@ -3218,6 +3295,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -3747,6 +3825,18 @@
           "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
+      "Xam.Plugin.Media/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "compile": {
@@ -3784,6 +3874,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -4314,6 +4405,18 @@
           "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
+      "Xam.Plugin.Media/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Essentials": "1.5.2"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "compile": {
@@ -4351,6 +4454,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -8876,6 +8980,46 @@
         "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll",
         "win2d.uwp.1.20.0.nupkg.sha512",
         "win2d.uwp.nuspec"
+      ]
+    },
+    "Xam.Plugin.Media/5.0.1": {
+      "sha512": "UUR31EEnhDVa4IXgVfQIAL3u9v6YAyppsb5UlO9MNJ4quGGkfcWX++JexjB1nMGqvCzsjAT2t32drKDIXoW4SQ==",
+      "type": "package",
+      "path": "xam.plugin.media/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/Plugin.Media.dll",
+        "lib/monoandroid10.0/Plugin.Media.pdb",
+        "lib/monoandroid10.0/Plugin.Media.xml",
+        "lib/monoandroid80/Plugin.Media.dll",
+        "lib/monoandroid80/Plugin.Media.pdb",
+        "lib/monoandroid80/Plugin.Media.xml",
+        "lib/monoandroid81/Plugin.Media.dll",
+        "lib/monoandroid81/Plugin.Media.pdb",
+        "lib/monoandroid81/Plugin.Media.xml",
+        "lib/monoandroid90/Plugin.Media.dll",
+        "lib/monoandroid90/Plugin.Media.pdb",
+        "lib/monoandroid90/Plugin.Media.xml",
+        "lib/netstandard1.0/Plugin.Media.dll",
+        "lib/netstandard1.0/Plugin.Media.pdb",
+        "lib/netstandard1.0/Plugin.Media.xml",
+        "lib/netstandard2.0/Plugin.Media.dll",
+        "lib/netstandard2.0/Plugin.Media.pdb",
+        "lib/netstandard2.0/Plugin.Media.xml",
+        "lib/tizen40/Plugin.Media.dll",
+        "lib/tizen40/Plugin.Media.pdb",
+        "lib/tizen40/Plugin.Media.xml",
+        "lib/uap10.0.16299/Plugin.Media.dll",
+        "lib/uap10.0.16299/Plugin.Media.pdb",
+        "lib/uap10.0.16299/Plugin.Media.pri",
+        "lib/uap10.0.16299/Plugin.Media.xml",
+        "lib/xamarinios10/Plugin.Media.dll",
+        "lib/xamarinios10/Plugin.Media.pdb",
+        "lib/xamarinios10/Plugin.Media.xml",
+        "readme.txt",
+        "xam.plugin.media.5.0.1.nupkg.sha512",
+        "xam.plugin.media.nuspec"
       ]
     },
     "Xamarin.Essentials/1.6.1": {

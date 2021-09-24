@@ -12,24 +12,61 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v11.0\Mono.Android.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
     <Compile Update="frmLogin.xaml.cs">
       <DependentUpon>frmLogin.xaml</DependentUpon>
     </Compile>
-    <Compile Update="View\frmMainMenu.xaml.cs">
+    <Compile Update="View\frmCadastrarProduto\frmCadastrarProduto_PRO_CONDICAOPRODUTO.xaml.cs">
+      <DependentUpon>frmCadastrarProduto_PRO_CONDICAOPRODUTO.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\frmCadastrarProduto\frmCadastrarProduto_PRO_CATEGORIA.xaml.cs">
+      <DependentUpon>frmCadastrarProduto_PRO_CATEGORIA.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\frmCadastrarProduto\frmCadastrarProduto_PRO_IMAGEM_3.xaml.cs">
+      <DependentUpon>frmCadastrarProduto_PRO_IMAGEM_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\frmCadastrarProduto\frmCadastrarProduto_PRO_IMAGEM_2.xaml.cs">
+      <DependentUpon>frmCadastrarProduto_PRO_IMAGEM_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\frmCadastrarProduto\frmCadastrarProduto_PRO_IMAGEM_1.xaml.cs">
+      <DependentUpon>frmCadastrarProduto_PRO_IMAGEM_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\frmCadastrarProduto\frmCadastrarProduto_PRO_QUANTIDADEDISPONIVEL.xaml.cs">
+      <DependentUpon>frmCadastrarProduto_PRO_QUANTIDADEDISPONIVEL.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\frmCadastrarProduto\frmCadastrarProduto_PRO_VALORVENDA.xaml.cs">
+      <DependentUpon>frmCadastrarProduto_PRO_VALORVENDA.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\frmCadastrarProduto\frmCadastrarProduto_PRO_DESCRICAO.xaml.cs">
+      <DependentUpon>frmCadastrarProduto_PRO_DESCRICAO.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="View\frmMainMenu_MasterDetailPage\frmMainMenu.xaml.cs">
       <DependentUpon>frmMainMenu.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="View\frmCadatrarProduto.xaml">
+    <EmbeddedResource Update="View\frmCadastrarProduto\frmCadastrarProduto_PRO_DESCRICAO.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\frmMainMenu.xaml">
+    <EmbeddedResource Update="View\frmMainMenu_MasterDetailPage\frmMainMenu.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\frmMainMenu_MasterDetailPage\frmMainMenu_Detail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\frmMainMenu_MasterDetailPage\frmMainMenu_Master.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

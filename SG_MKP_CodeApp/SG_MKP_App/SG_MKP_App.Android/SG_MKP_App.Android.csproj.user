@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>Xiaomi Redmi Note 4</SelectedDevice>
     <ActiveDebugProfile>Xiaomi Redmi Note 4</ActiveDebugProfile>
+    <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>

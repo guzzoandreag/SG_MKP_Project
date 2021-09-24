@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "z0M1D5D/ArSBEhFs4H8/xFP8cAVwna8MfMRF9wttmt05kQxtWfAO/vH1dvalWs9LgkHXzJOed3NGTSYGpMSCBw==",
+  "dgSpecHash": "+cBPh5MR1SZQ7FZ2PYYdvsVewdmjlTzZJz84O8/rq0IihUE0CkK2WzDyqT6olXfd840L1Svjf7vzi27WX7Uvmw==",
   "success": true,
   "projectFilePath": "D:\\SG_MKP_Project\\SG_MKP_CodeApp\\SG_MKP_App\\SG_MKP_App.UWP\\SG_MKP_App.UWP.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\Andre Guzzo\\.nuget\\packages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.12\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",
     "C:\\Users\\Andre Guzzo\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.12\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.12.nupkg.sha512",
     "C:\\Users\\Andre Guzzo\\.nuget\\packages\\win2d.uwp\\1.20.0\\win2d.uwp.1.20.0.nupkg.sha512",
+    "C:\\Users\\Andre Guzzo\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\Andre Guzzo\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Users\\Andre Guzzo\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],

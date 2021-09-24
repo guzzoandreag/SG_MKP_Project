@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SG_MKP_App.View.frmCadastrarProduto_PRO_VALORVENDA"
+             Title="Cadastro de Produto">
+    <ContentPage.Content>
+        <StackLayout
+            BackgroundColor="#1e1e1e"
+            >
+            <Grid
+                Padding="5"
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="#1e1e1e">
+                <Grid.ColumnDefinitions>
+                    <!--Column 1-->
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                    <!--Column 2-->                    
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                    <!--Column 3-->                    
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                    <!--Column 4-->
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                    <!--Column 5-->                    
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                    <!--Column 6-->
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <!--Row 1-->
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <!--Row 2-->
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <!--Row 3-->
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <!--Row 4-->
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <!--Row 5-->
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <!--Row 6-->
+                    <RowDefinition 
+                        Height="*"
+                    />                    
+                </Grid.RowDefinitions>
+                <Label 
+                    Text="Qual valor do produto ?"
+                    FontFamily="Sans"
+                    FontSize="26"
+                    FontAttributes="Bold"
+                    TextColor="#03d260"
+                    HorizontalTextAlignment="Center"
+                    Padding="10,0,0,0"
+                    
+                    Grid.Column="0" 
+                    Grid.Row="1" 
+                    Grid.ColumnSpan="6"                    
+                />
+                <Entry
+                    x:Name="EntryPRO_VALORVENDA"
+                    Text="Ex : 9,90 "
+                    TextColor="#a4a4a4"
+                    HorizontalTextAlignment="Center"
+                    Keyboard="Numeric"
+                    
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="6"
+                    
+                    Focused="EntryPRO_VALORVENDA_Focused"
+                />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

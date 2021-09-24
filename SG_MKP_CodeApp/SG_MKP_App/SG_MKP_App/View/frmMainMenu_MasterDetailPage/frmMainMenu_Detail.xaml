@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SG_MKP_App.View.frmMainMenu_MasterDetailPage.frmMainMenu_Detail"
+             Title="SG de Marketplace"
+             BackgroundColor="#1e1e1e">
+    <ContentPage.Content>
+        <StackLayout
+            BackgroundColor="#1e1e1e"
+            VerticalOptions="FillAndExpand">
+            <Grid
+                    Padding="5"
+                    VerticalOptions="FillAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <RowDefinition 
+                        Height="*"
+                    />
+                </Grid.RowDefinitions>
+                <ScrollView
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Grid.ColumnSpan="3"
+                        Grid.RowSpan="37">
+                    <Button 
+                        x:Name="ButtonPanel"
+                        Text="André Guzzo"
+                        TextColor="#4a148c"
+                        BorderColor="#4a148c"
+                        BorderWidth="2"                
+                        FontAttributes="Bold" 
+                        FontFamily="Sans"
+                        FontSize="Large"
+                        BackgroundColor="White"                
+                        CornerRadius="5"
+                    />
+                    <!--
+                    <BoxView
+                        BackgroundColor="DimGray"
+                        CornerRadius="5">
+                        
+                    </BoxView>
+                    -->
+                </ScrollView>
+            </Grid>
+            <Grid
+                Padding="5"
+                VerticalOptions="EndAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition 
+                        Height="50"
+                    />
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <RowDefinition 
+                        Height="50"
+                    />
+                    <RowDefinition 
+                        Height="*"
+                    />
+                </Grid.RowDefinitions>
+                <Label 
+                    Text="Funcionalidades"
+                    FontFamily="Sans"
+                    FontSize="26"
+                    FontAttributes="Bold"
+                    TextColor="#03d260"
+                    VerticalOptions="EndAndExpand"
+                    Padding="10,0,0,0"
+                    
+                    Grid.Column="0" 
+                    Grid.Row="0" 
+                    Grid.ColumnSpan="3"
+                />
+                <!--#8257e5-->
+                <ScrollView
+                    Orientation="Horizontal"
+                    BackgroundColor="Transparent"                    
+                    VerticalOptions="EndAndExpand"
+                    
+                    Grid.Column="0" 
+                    Grid.Row="1" 
+                    Grid.ColumnSpan="3">
+                    <Grid
+                        Padding="5"
+                        VerticalOptions="EndAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition 
+                                Height="90"
+                            />
+                        </Grid.RowDefinitions>
+
+                        <Button
+                            Text="Publicar Produtos"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"                            
+                            
+                            Grid.Column="0"
+                        />
+                        <Button
+                            Text="Puxar Pedidos"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"    
+                            
+                            Grid.Column="1"
+                        />
+                        <Button
+                            Text="2"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"
+                            
+                            Grid.Column="2"
+                            
+                            IsVisible="False"
+                        />
+                        <Button
+                            Text="3"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"
+                            
+                            Grid.Column="3"
+                            
+                            IsVisible="False"
+                        />
+                        <Button
+                            Text="4"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"                            
+                            
+                            Grid.Column="4"
+                            
+                            IsVisible="False"
+                        />
+                        <Button
+                            Text="5"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"                            
+                            
+                            Grid.Column="5"
+                            
+                            IsVisible="False"
+                        />
+                        <Button
+                            Text="6"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"   
+
+                            Grid.Column="6"
+
+                            IsVisible="False"
+                        />
+                        <Button
+                            Text="7"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"   
+
+                            Grid.Column="7"
+
+                            IsVisible="False"
+                        />
+                        <Button
+                            Text="8"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"
+                        
+                            Grid.Column="8"
+
+                            IsVisible="False"
+                        />
+                    </Grid>
+                </ScrollView>
+                <Label
+                    Text="Cadastros/Movimentos"
+                    FontFamily="Sans"
+                    FontSize="26"
+                    FontAttributes="Bold"
+                    TextColor="#03d260"
+                    VerticalOptions="EndAndExpand"
+                    Padding="10,0,0,0" 
+                    
+                    Grid.Column="0" 
+                    Grid.Row="2" 
+                    Grid.ColumnSpan="3"                    
+                />
+                <ScrollView
+                    Orientation="Horizontal"
+                    BackgroundColor="Transparent"
+                    VerticalOptions="EndAndExpand"
+                    
+                    Grid.Column="0" 
+                    Grid.Row="3" 
+                    Grid.ColumnSpan="3">
+                    <Grid 
+                        Padding="5"
+                        VerticalOptions="EndAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                            <ColumnDefinition 
+                                Width="100"
+                            />
+                            <ColumnDefinition 
+                                Width="100"
+                            />                            
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition 
+                                Height="90"
+                            />
+                        </Grid.RowDefinitions>
+
+                        <Button
+                            x:Name="ButtonCadProduto"
+                            Text="Produtos"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"
+
+                            Grid.Column="0"
+
+                            IsVisible="True"                            
+                            
+                            Clicked="ButtonCadProduto_Clicked"
+                        />
+                        <Button
+                            x:Name="ButtonPedidos"                            
+                            Text="Pedidos"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"
+
+                            Grid.Column="1"
+                            
+                            IsVisible="True"
+                        />
+                        <Button
+                            x:Name="ButtonFinanceiro"                            
+                            Text="Financeiro"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"
+
+                            Grid.Column="2"
+                            
+                            IsVisible="True"
+                        />
+                        <Button
+                            Text="3"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"
+
+                            Grid.Column="3"
+                            
+                            IsVisible="False"
+                        />
+                        <Button                          
+                            Text="4"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"
+
+                            Grid.Column="4"
+                            
+                            IsVisible="False"                         
+                        />
+                        <Button                     
+                            Text="5"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"
+
+                            Grid.Column="5"
+                            
+                            IsVisible="False"                       
+                        />
+                        <Button
+                            Text="6"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"
+
+                            Grid.Column="6"
+                            
+                            IsVisible="False"                          
+                        />
+                        <Button
+                            Text="7"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"
+
+                            Grid.Column="7"
+                            
+                            IsVisible="False"
+                        />
+                        <Button
+                            Text="8"
+                            TextColor="White"
+                            BorderColor="#4a148c"
+                            BorderWidth="2"
+                            FontAttributes="Bold" 
+                            FontFamily="Sans"
+                            FontSize="11"
+                            BackgroundColor="#4a148c"
+                            CornerRadius="5"
+
+                            Grid.Column="8"
+                            
+                            IsVisible="False"
+                        />                        
+                    </Grid>
+                </ScrollView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
