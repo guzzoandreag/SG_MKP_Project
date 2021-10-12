@@ -8,11 +8,14 @@ D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\bin\Debug\netstandard2.0\
 D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\SG_MKP_App.GeneratedMSBuildEditorConfig.editorconfig
 D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\frmLogin.xaml.g.cs
+D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\View\frmCadastrarProduto\frmCadastrarProduto_CarouselPage.xaml.g.cs
 D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\View\frmCadastrarProduto\frmCadastrarProduto_PRO_CATEGORIA.xaml.g.cs
+D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\View\frmCadastrarProduto\frmCadastrarProduto_PRO_CONDICAOPRODUTO.xaml.g.cs
 D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\View\frmCadastrarProduto\frmCadastrarProduto_PRO_DESCRICAO.xaml.g.cs
 D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\View\frmCadastrarProduto\frmCadastrarProduto_PRO_IMAGEM_1.xaml.g.cs
 D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\View\frmCadastrarProduto\frmCadastrarProduto_PRO_IMAGEM_2.xaml.g.cs
 D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\View\frmCadastrarProduto\frmCadastrarProduto_PRO_IMAGEM_3.xaml.g.cs
+D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\View\frmCadastrarProduto\frmCadastrarProduto_PRO_QUANTIDADEDISPONIVEL.xaml.g.cs
 D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\View\frmCadastrarProduto\frmCadastrarProduto_PRO_VALORVENDA.xaml.g.cs
 D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\View\frmMainMenu_MasterDetailPage\frmMainMenu.xaml.g.cs
 D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\View\frmMainMenu_MasterDetailPage\frmMainMenu_Detail.xaml.g.cs
@@ -25,6 +28,3 @@ D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\
 D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\SG_MKP_App.dll
 D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\ref\SG_MKP_App.dll
 D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\SG_MKP_App.pdb
-D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\View\frmCadastrarProduto\frmCadastrarProduto_PRO_CONDICAOPRODUTO.xaml.g.cs
-D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\View\frmCadastrarProduto\frmCadastrarProduto_PRO_QUANTIDADEDISPONIVEL.xaml.g.cs
-D:\SG_MKP_Project\SG_MKP_CodeApp\SG_MKP_App\SG_MKP_App\obj\Debug\netstandard2.0\SG_MKP_App.csproj.AssemblyReference.cache

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using SG_MKP_App.View;
+using SG_MKP_App.View.frmCadastrarProduto;
 
 namespace SG_MKP_App.View.frmMainMenu_MasterDetailPage
 {
@@ -20,17 +20,18 @@ namespace SG_MKP_App.View.frmMainMenu_MasterDetailPage
 
         async private void ButtonCadProduto_Clicked(object sender, EventArgs e)
         {
-            CarouselPage frmCadProduto_CarouselPage = new CarouselPage();
-            frmCadProduto_CarouselPage.Title = "Cadastro de Produto";
-            frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_DESCRICAO());
-            frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_CATEGORIA());
-            frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_VALORVENDA());
-            frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_IMAGEM_1());
-            frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_IMAGEM_2());
-            frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_IMAGEM_3());
-            frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_CONDICAOPRODUTO());
-            frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_QUANTIDADEDISPONIVEL());
-            await Navigation.PushAsync(frmCadProduto_CarouselPage);
+            //CarouselPage frmCadProduto_CarouselPage = new CarouselPage();
+            //frmCadProduto_CarouselPage.Title = "Cadastro de Produto";
+            //frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_DESCRICAO());
+            //frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_CATEGORIA());
+            //frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_VALORVENDA());
+            //frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_IMAGEM_1());
+            //frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_IMAGEM_2());
+            //frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_IMAGEM_3());
+            //frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_CONDICAOPRODUTO());
+            //frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_QUANTIDADEDISPONIVEL());
+            //await Navigation.PushAsync(new frmCadProduto_CarouselPage);
+            await Navigation.PushAsync(new frmCadastrarProduto_CarouselPage());
         }
     }
 }

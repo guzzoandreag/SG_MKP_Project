@@ -21,5 +21,13 @@ namespace SG_MKP_App.View
         {
             EntryPRO_QUANTIDADEDISPONIVEL.Text = "";
         }
+
+        private void EntryPRO_QUANTIDADEDISPONIVEL_Unfocused(object sender, FocusEventArgs e)
+        {
+            if (EntryPRO_QUANTIDADEDISPONIVEL.Text.Length == 0)
+            {
+                EntryPRO_QUANTIDADEDISPONIVEL.Text = "Ex : 50";
+            }
+        }
     }
 }

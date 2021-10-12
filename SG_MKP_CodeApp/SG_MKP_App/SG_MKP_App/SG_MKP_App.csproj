@@ -51,6 +51,9 @@
     <Compile Update="View\frmCadastrarProduto\frmCadastrarProduto_PRO_DESCRICAO.xaml.cs">
       <DependentUpon>frmCadastrarProduto_PRO_DESCRICAO.xaml</DependentUpon>
     </Compile>
+    <Compile Update="View\frmCadastrarProduto\frmCadastrarProduto_CarouselPage.xaml.cs">
+      <DependentUpon>frmCadastrarProduto_CarouselPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="View\frmMainMenu_MasterDetailPage\frmMainMenu.xaml.cs">
       <DependentUpon>frmMainMenu.xaml</DependentUpon>
     </Compile>
@@ -58,6 +61,9 @@
 
   <ItemGroup>
     <EmbeddedResource Update="View\frmCadastrarProduto\frmCadastrarProduto_PRO_DESCRICAO.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\frmCadastrarProduto\frmCadastrarProduto_CarouselPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\frmMainMenu_MasterDetailPage\frmMainMenu.xaml">

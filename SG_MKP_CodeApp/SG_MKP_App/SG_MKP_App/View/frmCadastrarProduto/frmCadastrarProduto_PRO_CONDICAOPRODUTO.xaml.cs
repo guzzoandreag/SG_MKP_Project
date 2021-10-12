@@ -21,5 +21,13 @@ namespace SG_MKP_App.View
         {
             EntryPRO_CONDICAOPRODUTO.Text = "";
         }
+
+        private void EntryPRO_CONDICAOPRODUTO_Unfocused(object sender, FocusEventArgs e)
+        {
+            if (EntryPRO_CONDICAOPRODUTO.Text.Length == 0)
+            {
+                EntryPRO_CONDICAOPRODUTO.Text = "Ex : Novo / Semi-Novo / Usado";
+            }
+        }
     }
 }

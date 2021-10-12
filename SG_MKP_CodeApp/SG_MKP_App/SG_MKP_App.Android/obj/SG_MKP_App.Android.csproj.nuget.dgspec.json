@@ -25,14 +25,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "monoandroid70"
+          "monoandroid11.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "monoandroid70": {
+          "monoandroid11.0": {
             "projectReferences": {
               "D:\\SG_MKP_Project\\SG_MKP_CodeApp\\SG_MKP_App\\SG_MKP_App\\SG_MKP_App.csproj": {
                 "projectPath": "D:\\SG_MKP_Project\\SG_MKP_CodeApp\\SG_MKP_App\\SG_MKP_App\\SG_MKP_App.csproj"
@@ -42,7 +42,7 @@
         }
       },
       "frameworks": {
-        "monoandroid70": {
+        "monoandroid11.0": {
           "dependencies": {
             "Xamarin.Essentials": {
               "target": "Package",

@@ -78,7 +78,7 @@
                 />
                 <Entry
                     x:Name="EntryPRO_QUANTIDADEDISPONIVEL"
-                    Text="Ex : 9,90 "
+                    Text="Ex : 50 "
                     TextColor="#a4a4a4"
                     HorizontalTextAlignment="Center"
                     Keyboard="Numeric"
@@ -88,6 +88,7 @@
                     Grid.ColumnSpan="6"
                     
                     Focused="EntryPRO_QUANTIDADEDISPONIVEL_Focused"
+                    Unfocused="EntryPRO_QUANTIDADEDISPONIVEL_Unfocused"
                 />
             </Grid>
         </StackLayout>

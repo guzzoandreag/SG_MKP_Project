@@ -21,5 +21,13 @@ namespace SG_MKP_App.View
         {
             EntryPRO_CATEGORIA.Text = "";
         }
+
+        private void EntryPRO_CATEGORIA_Unfocused(object sender, FocusEventArgs e)
+        {
+            if (EntryPRO_CATEGORIA.Text.Length == 0)
+            {
+                EntryPRO_CATEGORIA.Text = "Ex : ALIMENTO";
+            }
+        }
     }
 }

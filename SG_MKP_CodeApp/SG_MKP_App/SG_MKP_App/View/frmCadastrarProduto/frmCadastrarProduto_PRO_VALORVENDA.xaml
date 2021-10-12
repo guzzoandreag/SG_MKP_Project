@@ -88,6 +88,7 @@
                     Grid.ColumnSpan="6"
                     
                     Focused="EntryPRO_VALORVENDA_Focused"
+                    Unfocused="EntryPRO_VALORVENDA_Unfocused"
                 />
             </Grid>
         </StackLayout>

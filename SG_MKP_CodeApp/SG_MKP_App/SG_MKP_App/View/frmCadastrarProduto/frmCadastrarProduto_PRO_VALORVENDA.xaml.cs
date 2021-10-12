@@ -21,5 +21,13 @@ namespace SG_MKP_App.View
         {
             EntryPRO_VALORVENDA.Text = "";
         }
+
+        private void EntryPRO_VALORVENDA_Unfocused(object sender, FocusEventArgs e)
+        {
+            if (EntryPRO_VALORVENDA.Text.Length == 0)
+            {
+                EntryPRO_VALORVENDA.Text = "Ex : 9,90";
+            }
+        }
     }
 }
