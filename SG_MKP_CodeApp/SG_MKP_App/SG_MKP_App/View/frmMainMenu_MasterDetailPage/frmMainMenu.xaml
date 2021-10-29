@@ -14,7 +14,7 @@
         <NavigationPage>
             <x:Arguments>
                 <pages:frmMainMenu_Detail 
-                    x:Name="frmMainMenu_Detail"    
+                    x:Name="frmMainMenu_Detail"
                 />
             </x:Arguments>
         </NavigationPage>

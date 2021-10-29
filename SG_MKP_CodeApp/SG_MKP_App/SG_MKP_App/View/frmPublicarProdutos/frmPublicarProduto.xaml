@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SG_MKP_App.View.frmPublicarProdutos.frmPublicarProduto"
+             Title="Publicar Produtos">
+    <ContentPage.Content>
+        <StackLayout
+            BackgroundColor="#1e1e1e" >
+            <Grid
+                Padding="15"
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="#1e1e1e">
+                <Grid.ColumnDefinitions>
+                    <!--Column 1-->
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                    <!--Column 2-->
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                    <!--Column 3-->
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                    <!--Column 4-->
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                    <!--Column 5-->
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                    <!--Column 6-->
+                    <ColumnDefinition 
+                        Width="*"
+                    />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <!--Row 1-->
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <!--Row 2-->
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <!--Row 3-->
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <!--Row 4-->
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <!--Row 5-->
+                    <RowDefinition 
+                        Height="*"
+                    />
+                    <!--Row 6-->
+                    <RowDefinition 
+                        Height="*"
+                    />
+                </Grid.RowDefinitions>
+                    <ListView 
+                        x:Name="ListaProdutos"
+                        BackgroundColor="Red"
+                        
+                        Grid.Column="0" 
+                        Grid.Row="0" 
+                        Grid.ColumnSpan="6"
+                        Grid.RowSpan="4"
+                    />
+                    <Button
+                        x:Name="ButtonPublicarProdutos"
+                        Text="Publicar"
+                        TextColor="White"
+                        BorderColor="#4a148c"
+                        BorderWidth="2"
+                        FontAttributes="Bold"
+                        FontFamily="Sans"
+                        FontSize="Large"
+                        BackgroundColor="#4a148c"
+                        CornerRadius="5"
+                        Margin="0,10,0,0"
+
+                        Grid.Column="1"
+                        Grid.Row="4"
+                        Grid.ColumnSpan="4"
+                    />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SG_MKP_App.View.frmCadastrarProduto;
+using SG_MKP_App.View.frmPublicarProdutos;
 
 namespace SG_MKP_App.View.frmMainMenu_MasterDetailPage
 {
@@ -32,6 +33,11 @@ namespace SG_MKP_App.View.frmMainMenu_MasterDetailPage
             //frmCadProduto_CarouselPage.Children.Add(new frmCadastrarProduto_PRO_QUANTIDADEDISPONIVEL());
             //await Navigation.PushAsync(new frmCadProduto_CarouselPage);
             await Navigation.PushAsync(new frmCadastrarProduto_CarouselPage());
+        }
+
+        async private void ButtonPublicarProduto_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new frmPublicarProduto());
         }
     }
 }

@@ -87,7 +87,7 @@ namespace SG_MKP_App
                 //App.Current.MainPage = new frmMainMenu();
 
                 HttpClient usuarioHTTP = new HttpClient(); 
-                string json = await usuarioHTTP.GetStringAsync("http://desktop-8fbg4sb:8090/api/USUARIOS");
+                string json = await usuarioHTTP.GetStringAsync("http://sg-mkp.somee.com/api/usuarios");
                 List<USUARIO> usuario_validar = JsonConvert.DeserializeObject<List<USUARIO>>(json);
                 foreach (var item in usuario_validar)
                 {

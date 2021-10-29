@@ -9,8 +9,8 @@
             BackgroundColor="#1e1e1e"
             VerticalOptions="FillAndExpand">
             <Grid
-                    Padding="5"
-                    VerticalOptions="FillAndExpand">
+                Padding="5"
+                VerticalOptions="FillAndExpand">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition 
                         Width="*"
@@ -154,6 +154,7 @@
                         </Grid.RowDefinitions>
 
                         <Button
+                            x:Name="ButtonPublicarProduto"
                             Text="Publicar Produtos"
                             TextColor="White"
                             BorderColor="#4a148c"
@@ -165,6 +166,8 @@
                             CornerRadius="5"                            
                             
                             Grid.Column="0"
+                            
+                            Clicked="ButtonPublicarProduto_Clicked"
                         />
                         <Button
                             Text="Puxar Pedidos"

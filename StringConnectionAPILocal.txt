@@ -1,0 +1,2 @@
+<add name="Model_USUARIO" connectionString="data source=.\SQLEXPRESS;initial catalog=SG_MKP;user id=sa;password=masterkey;MultipleActiveResultSets=True;App=EntityFramework" providerName="System.Data.SqlClient" />
+<add name="Model_PRODUTO" connectionString="data source=.\SQLEXPRESS;initial catalog=SG_MKP;user id=sa;password=masterkey;MultipleActiveResultSets=True;App=EntityFramework" providerName="System.Data.SqlClient" />

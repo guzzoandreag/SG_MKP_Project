@@ -29,7 +29,7 @@ namespace SG_MKP_App.View.frmCadastrarProduto
         //  -- frmCadastrarProduto_PRO_DESCRICAO --
         private void EntryPRO_DESCRICAO_Focused(object sender, FocusEventArgs e)
         {
-            if (EntryPRO_DESCRICAO.Text == "Ex: BATATA FRITA 1KG")
+            if (EntryPRO_DESCRICAO.Text == "Ex : BATATA FRITA 1KG")
             {
                 EntryPRO_DESCRICAO.Text = "";
             }            
@@ -39,7 +39,7 @@ namespace SG_MKP_App.View.frmCadastrarProduto
         {
             if (EntryPRO_DESCRICAO.Text.Length == 0)
             {
-                EntryPRO_DESCRICAO.Text = "Ex: BATATA FRITA 1KG";
+                EntryPRO_DESCRICAO.Text = "Ex : BATATA FRITA 1KG";
             }
             else
             {
@@ -128,18 +128,19 @@ namespace SG_MKP_App.View.frmCadastrarProduto
                 {
                     ImagePRO_IMAGEM_1.Source = ImageSource.FromStream(() =>
                     {
-                        using (MemoryStream memory = new MemoryStream())
-                        {
-                            var stream = imagem.GetStream();
-                            stream.CopyTo(memory);
-                            Produto.PRO_IMAGEM_1 = memory.ToArray();
-                            imagem.Dispose();
+                        var stream = imagem.GetStream();
                         return stream;
-                        }
-                        //var stream = imagem.GetStream();
-                        //imagem.Dispose();
-                        //return stream;
                     });
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        imagem.GetStream().CopyTo(memoryStream);
+                        imagem.Dispose();
+                        Produto.PRO_IMAGEM_1 = memoryStream.ToArray();
+                    }
+                }
+                else
+                {
+                    Produto.PRO_IMAGEM_1 = null;
                 }
             }
         }
@@ -197,18 +198,19 @@ namespace SG_MKP_App.View.frmCadastrarProduto
                 {
                     ImagePRO_IMAGEM_2.Source = ImageSource.FromStream(() =>
                     {
-                        using (MemoryStream memory = new MemoryStream())
-                        {
-                            var stream = imagem.GetStream();
-                            stream.CopyTo(memory);
-                            Produto.PRO_IMAGEM_2 = memory.ToArray();
-                            imagem.Dispose();
-                            return stream;
-                        }
-                        //var stream = imagem.GetStream();
-                        //imagem.Dispose();
-                        //return stream;
+                        var stream = imagem.GetStream();
+                        return stream;
                     });
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        imagem.GetStream().CopyTo(memoryStream);
+                        imagem.Dispose();
+                        Produto.PRO_IMAGEM_2 = memoryStream.ToArray();
+                    }
+                }
+                else
+                {
+                    Produto.PRO_IMAGEM_2 = null;
                 }
             }
         }
@@ -258,7 +260,7 @@ namespace SG_MKP_App.View.frmCadastrarProduto
         }
 
         private async void PRO_IMAGEM_3SelecionarImagem(object sender, EventArgs e)
-        {
+        {            
             if (CrossMedia.Current.IsTakePhotoSupported)
             {
                 var imagem = await CrossMedia.Current.PickPhotoAsync();
@@ -266,18 +268,19 @@ namespace SG_MKP_App.View.frmCadastrarProduto
                 {
                     ImagePRO_IMAGEM_3.Source = ImageSource.FromStream(() =>
                     {
-                        using (MemoryStream memory = new MemoryStream())
-                        {
-                            var stream = imagem.GetStream();
-                            stream.CopyTo(memory);
-                            Produto.PRO_IMAGEM_3 = memory.ToArray();
-                            imagem.Dispose();
-                            return stream;
-                        }
-                        //var stream = imagem.GetStream();
-                        //imagem.Dispose();
-                        //return stream;
+                        var stream = imagem.GetStream();
+                        return stream;
                     });
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        imagem.GetStream().CopyTo(memoryStream);
+                        imagem.Dispose();
+                        Produto.PRO_IMAGEM_3 = memoryStream.ToArray();
+                    }
+                }
+                else
+                {
+                    Produto.PRO_IMAGEM_3 = null;
                 }
             }
         }
@@ -344,15 +347,16 @@ namespace SG_MKP_App.View.frmCadastrarProduto
             {
                 HttpClient produtoHTTP = new HttpClient();
                 var gravarProduto = new StringContent(JsonConvert.SerializeObject(Produto), Encoding.UTF8, "application/json");
-                var response = await produtoHTTP.PostAsync("http://desktop-8fbg4sb:8090/api/PRODUTOS", gravarProduto);
+                var response = await produtoHTTP.PostAsync("http://sg-mkp.somee.com/api/produtos", gravarProduto);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    await DisplayAlert("Salvar", "Cadastro realizado com sucesso!", "Ok");
+                    await DisplayAlert("Salvar", "Cadastro realizado com sucesso!", "OK");
+                    App.Current.MainPage = new frmMainMenu();
                 }
                 else
                 {
-                    await DisplayAlert("Erro", "Falha ao realizar o cadastro!", "Ok");
+                    await DisplayAlert("Erro", "Falha ao realizar o cadastro!", "OK");
                 }
                 ButtonFinalizarCadastro.IsEnabled = true;
             }
@@ -362,7 +366,7 @@ namespace SG_MKP_App.View.frmCadastrarProduto
                 await DisplayAlert("frmCadastrarProduto_CarouselPage_CadastrarProduto_Finalizar", e.Message, "OK");
             }
         }
-
+        //  -- frmCadastrarProduto_FinalizarCadastro --
         private void ButtonFinalizarCadastro_Clicked(object sender, EventArgs e)
         {
             (sender as Button).IsEnabled = false;

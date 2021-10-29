@@ -839,7 +839,7 @@
         </StackLayout>
     </ContentPage>
 
-    <!-- frmCadastrarProduto_PRO_IMAGEM_3 -->
+    <!-- frmCadastrarProduto_FinalizarCadastro -->
     <ContentPage>
         <StackLayout
             BackgroundColor="#1e1e1e" >
