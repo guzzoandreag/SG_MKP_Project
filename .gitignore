@@ -397,3 +397,10 @@ FodyWeavers.xsd
 # Diretorios de banco de dados.
 SG_MKP_BD_Backups/
 SG_MKP_BD_Dados/
+
+# Arquivos Gerados do App.
+SG_MKP_CodeApp/SG_MKP_App/.vs
+SG_MKP_CodeApp/SG_MKP_App/SG_MKP_App/obj
+SG_MKP_CodeApp/SG_MKP_App/SG_MKP_App.Android/obj
+SG_MKP_CodeApp/SG_MKP_App/SG_MKP_App.UWP/obj
+Resource.designer.cs
