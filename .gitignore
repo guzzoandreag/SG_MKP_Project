@@ -409,3 +409,4 @@ SG_MKP_CodeApp/SG_MKP_App/SG_MKP_App.UWP/bin
 Resource.designer.cs
 Package.appxmanifest
 SG_MKP_API.csproj.user
+FolderProfile.pubxml.user
