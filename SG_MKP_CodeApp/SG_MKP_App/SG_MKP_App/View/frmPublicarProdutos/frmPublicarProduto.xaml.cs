@@ -50,5 +50,11 @@ namespace SG_MKP_App.View.frmPublicarProdutos
             ListaProdutos.ItemsSource = produtosList;
             //DisplayAlert("CarregarCodigos", "Appearing_CarregarCodigos", "OK");
         }
+
+        private void ButtonPublicarProdutos_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Publicação", "Produtos selecionados publicados com Sucesso !!", "OK");
+            App.Current.MainPage = new frmMainMenu();
+        }
     }
 }
