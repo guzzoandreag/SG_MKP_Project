@@ -58,9 +58,40 @@ namespace SG_MKP_App
             }
         }
 
+        async private void CadastrarUsuario_Cadastrar()
+        {
+            //DisplayAlert("Teste", "ButtonCadUsuario_Clicked", "OK");
+            try
+            {
+                USUARIO Usuario = new USUARIO();
+                Usuario.USU_USUARIO = EntryUsuario.Text;
+                Usuario.USU_SENHA = EntrySenha.Text;
+                HttpClient usuarioHTTP = new HttpClient();
+                var jsonGravarUsuarioAPI = new StringContent(JsonConvert.SerializeObject(Usuario), Encoding.UTF8, "application/json");
+                var response = await usuarioHTTP.PostAsync("http://sg-mkp.somee.com/api/usuarios", jsonGravarUsuarioAPI);
+                //var response = await usuarioHTTP.PostAsync("http://10.20.30.104:8090/api/usuarios", jsonGravarUsuarioAPI);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    await DisplayAlert("Salvar", "Usuario Cadastrado com sucesso!", "OK");
+                }
+                else
+                {
+                    await DisplayAlert("Erro", "Falha ao cadastrar usuario!", "OK");
+                }
+                ButtonCadUsuario.IsEnabled = true;
+            }
+            catch (Exception e)
+            {
+                ButtonCadUsuario.IsEnabled = true;
+                await DisplayAlert("frmLogin_CadastrarUsuario_Cadastrar", e.Message, "OK");
+            }
+        }
+
         private void ButtonCadUsuario_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Teste", "ButtonCadUsuario_Clicked", "OK");
+            ButtonCadUsuario.IsEnabled = false;
+            CadastrarUsuario_Cadastrar();
         }
 
         private void LabelEsqueceuSenha_Clicked()
@@ -80,8 +111,8 @@ namespace SG_MKP_App
         }
         async private void ValidarUsuario_Entrar(string usuario, string senha)
         {
-            usuario = "guzzoandre.ag@outlook.com";
-            senha = "Ag*99345038";
+            //usuario = "guzzo";
+            //senha = "1234";
             try
             {
                 //App.Current.MainPage = new frmMainMenu();
