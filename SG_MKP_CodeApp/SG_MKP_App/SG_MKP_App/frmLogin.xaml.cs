@@ -87,8 +87,8 @@ namespace SG_MKP_App
                 //App.Current.MainPage = new frmMainMenu();
 
                 HttpClient usuarioHTTP = new HttpClient();
-                //string jsonUsuariosAPI = await usuarioHTTP.GetStringAsync("http://sg-mkp.somee.com/api/usuarios");
-                string jsonUsuariosAPI = await usuarioHTTP.GetStringAsync("http://10.20.30.104:8090/api/usuarios");
+                string jsonUsuariosAPI = await usuarioHTTP.GetStringAsync("http://sg-mkp.somee.com/api/usuarios");
+                //string jsonUsuariosAPI = await usuarioHTTP.GetStringAsync("http://10.20.30.104:8090/api/usuarios");
                 List<USUARIO> usuariosList = JsonConvert.DeserializeObject<List<USUARIO>>(jsonUsuariosAPI);
                 foreach (var item in usuariosList)
                 {

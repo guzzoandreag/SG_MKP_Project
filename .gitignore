@@ -398,6 +398,9 @@ FodyWeavers.xsd
 SG_MKP_BD_Backups/
 SG_MKP_BD_Dados/
 
+# Diretorio dos Arquivos de Publicação da API.
+WebService/
+
 # Arquivos Diversos.
 SG_MKP_CodeApp/SG_MKP_App/.vs
 SG_MKP_CodeApp/SG_MKP_App/SG_MKP_App/obj

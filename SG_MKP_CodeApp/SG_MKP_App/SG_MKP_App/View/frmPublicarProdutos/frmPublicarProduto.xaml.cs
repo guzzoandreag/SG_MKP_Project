@@ -31,8 +31,8 @@ namespace SG_MKP_App.View.frmPublicarProdutos
         private async void CarregarCodigos(object sender, EventArgs e)
         {
             HttpClient produtoHTTP = new HttpClient();
-            //string jsonProdutosAPI = await produtoHTTP.GetStringAsync("http://sg-mkp.somee.com/api/produtos");
-            string jsonProdutosAPI = await produtoHTTP.GetStringAsync("http://10.20.30.104:8090/api/produtos");
+            string jsonProdutosAPI = await produtoHTTP.GetStringAsync("http://sg-mkp.somee.com/api/produtos");
+            //string jsonProdutosAPI = await produtoHTTP.GetStringAsync("http://10.20.30.104:8090/api/produtos");
             List<PRODUTO> produtosList = JsonConvert.DeserializeObject<List<PRODUTO>>(jsonProdutosAPI);
 
             //List<PRODUTO> produtos = new List<PRODUTO>()

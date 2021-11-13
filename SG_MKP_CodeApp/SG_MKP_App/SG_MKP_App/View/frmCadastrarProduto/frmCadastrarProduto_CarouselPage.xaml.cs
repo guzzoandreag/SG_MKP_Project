@@ -347,8 +347,8 @@ namespace SG_MKP_App.View.frmCadastrarProduto
             {
                 HttpClient produtoHTTP = new HttpClient();
                 var jsonGravarProdutosAPI = new StringContent(JsonConvert.SerializeObject(Produto), Encoding.UTF8, "application/json");
-                //var response = await produtoHTTP.PostAsync("http://sg-mkp.somee.com/api/produtos", jsonGravarProdutosAPI);
-                var response = await produtoHTTP.PostAsync("http://10.20.30.104:8090/api/produtos", jsonGravarProdutosAPI);
+                var response = await produtoHTTP.PostAsync("http://sg-mkp.somee.com/api/produtos", jsonGravarProdutosAPI);
+                //var response = await produtoHTTP.PostAsync("http://10.20.30.104:8090/api/produtos", jsonGravarProdutosAPI);
 
                 if (response.IsSuccessStatusCode)
                 {
